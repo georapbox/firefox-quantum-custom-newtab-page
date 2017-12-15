@@ -1,0 +1,65 @@
+@-moz-document url("about:newtab") {
+  :root {
+    --light: #ffffff;
+    --dark: #0C0C0D;
+  }
+
+  body {
+    overflow-y: auto !important;
+  }
+
+  body:before {
+    content: "" !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    background-image: url(images/mark_57.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    filter: blur(2px) !important;
+  }
+
+  .section-title span {
+    color: var(--light) !important;
+    fill: var(--light) !important;
+  }
+
+  .prefs-pane-button button,
+  .collapsible-section .section-top-bar .info-option-icon {
+    fill: var(--light) !important;
+  }
+
+  .prefs-pane-button button:hover {
+    background-color: transparent !important;
+  }
+
+  .prefs-pane-button button.icon-dismiss {
+    fill: var(--dark) !important;
+  }
+
+  .search-wrapper input {
+    color: #000 !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+  }
+
+  .search-wrapper:active input,
+  .search-wrapper input:focus {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .top-sites-list .top-site-outer > a,
+  .edit-topsites-wrapper .edit-topsites-button button {
+    color: var(--light) !important;
+  }
+
+  .top-sites-list .top-site-outer .tile {
+    background-color: var(--light) !important;
+  }
+
+  .modal .top-sites-list .top-site-outer > a {
+    color: var(--dark) !important;
+  }
+}
