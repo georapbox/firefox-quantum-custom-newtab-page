@@ -19,7 +19,7 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: cover !important;
-    filter: blur(2px) !important;
+    filter: sepia(100%) hue-rotate(180deg) !important;
   }
 
   .section-title span {
@@ -42,7 +42,7 @@
 
   .search-wrapper input {
     color: #000 !important;
-    background: rgba(255, 255, 255, 0.7) !important;
+    background: rgba(255, 255, 255, 0.8) !important;
   }
 
   .search-wrapper:active input,
